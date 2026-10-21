@@ -1,9 +1,46 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3EF7M5G1G3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-3EF7M5G1G3');
-</script>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito Test GA4</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EF7M5G1G3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3EF7M5G1G3');
+    </script>
+
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6;">
+
+    <h1>Benvenuto sul mio sito di test per GA4</h1>
+    <p>Questa pagina serve per testare la corretta ricezione dei dati su Google Analytics 4 tramite GitHub Pages.</p>
+
+    <hr>
+
+    <h2>Elementi interattivi per testare la Misurazione Avanzata</h2>
+    <p>Avendo attivato la <em>Misurazione avanzata</em> (Enhanced measurement), GA4 traccerà in automatico i seguenti eventi:</p>
+
+    <!-- Test Click su link esterno (Outbound Click) -->
+    <p>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Clicca qui per visitare la Privacy Policy di Google (Link Esterno)</a>
+    </p>
+
+    <!-- Test Download File -->
+    <p>
+        <a href="#test-download.pdf" onclick="alert('Download simulato!')">Scarica la guida di test (File Download simulato)</a>
+    </p>
+
+    <p style="margin-top: 800px; color: gray;">
+        <em>Scorri fino in fondo per verificare il tracciamento automatico dello <strong>Scroll</strong> (90%).</em>
+    </p>
+
+</body>
+</html>
